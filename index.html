@@ -1,14 +1,167 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Bootstrap CDN-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!--Fonts, icons, animations, and styling links-->
+    <link href="https://fonts.googleapis.com/css?family=Stoke&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <!--Application title-->
+    <title>Food-Takeaway Project</title>
 </head>
-
 <body>
-
-</body>
-
+    <body>
+        <div class="container">
+            <section aria-label="navbar">
+                <nav class="navbar">
+                    <div>
+                        <img class="logo" src="images/img-1.png" alt="logo" class="logo" />
+                    </div>
+                    <div>
+                        <ul class="list">
+                            <li class="list-item">Our Menu</li>
+                            <li class="list-item">Maps</li>
+                            <li class="list-item">About</li>
+                            <li class="list-item">Contact</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <button class="button">Order</button>
+                    </div>
+                </nav>
+            </section>
+            <!--Jumbotron with animation-->
+            <div class="jumbotron jumbotron-fluid">
+                <h1 class="display-1 animated tada">Food & Takeaway</h1>
+            </div>
+            <!--Bootstrap container and rows-->
+            <div class="container">
+                <div class="row" id="container-rows">
+                    <!--Food radio buttons-->
+                    <div class="col-lg-5 " id="foodborder">
+                        <h3 class="selections">Movies</h3>
+                    </div>
+                    <!--Empty div-->
+                    <div class="col-lg-2"></div>
+                    <!--Drink radio buttons-->
+                    <div class="col-lg-5 " id="drinkborder">
+                        <h3 class="selections">Receipes</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-5" id="card">
+                        <!--Recipe card displaying food name, ingredients, image, and link to recipe-->
+                        <div class="card remove">
+                            <img src="..." class="card-img-top" alt="Prepared Food">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text"></p>
+                                <a href="#" class="btn btn-primary" id="recipieLink" target="_blank">Click here for
+                                    recipe</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--Empty div-->
+                    <div class="col-lg-2"></div>
+                    <!--Drink recipe card displaying the cocktail name, image, units of measure, and ingredients-->
+                    <div class="col-lg-5" id="drinkcard">
+                        <div class="drinkCard remove">
+                            <img src="..." class="drinkCard-img-top" alt="Cocktail">
+                            <div class="drinkCard-body">
+                                <br>
+                                <h5 class="drinkCard-title">Card title</h5>
+                                <p class="drinkCard-text"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Linking jquery and script file-->
+            <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+            <script src="js/script.js"></script>
+            <!--Team Members Section-->
+            <section>
+                <div class="container bg-secondary" id="project-team">
+                    <div class="col-lg-7 order-lg-1 text-white">
+                        <div class="p-5">
+                            <h2 class="team">Project Team!</h2>
+                            <div class="main-container">
+                                <!-- Team Members Name-->
+                                <div class="row">
+                                    <!--Farha-->
+                                    <div class="col-lg-4">
+                                        <img class="img-fluid rounded-circle" src="images/farha.jpg" alt="">
+                                        <h2 class="heading">Farha</h2>
+                                        <a class="btn btn-primary" href="#">view details >></a>
+                                    </div>
+                                    <!--Max-->
+                                    <div class="col-lg-4">
+                                        <img class="img-fluid rounded-circle" src="images/max.jpeg" alt="">
+                                        <h2 class="heading">Max</h2>
+                                        <a class="btn btn-primary" href="#">view details >></a>
+                                    </div>
+                                    <!--Ewa-->
+                                    <div class="col-lg-4">
+                                        <img class="img-fluid rounded-circle" src="images/ewa.jpeg" alt="">
+                                        <h2 class="heading">Ewa</h2>
+                                        <a class="btn btn-primary" href="#">view details >></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- /.container -->
+            <br>
+            <br>
+            <!-- Footer -->
+            <footer class="footer bg-light" id="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 h-100 text-center mx-auto" id="links">
+                            <ul class="list-inline mb-0">
+                                <li class="list-inline-item mr-3" id="linkedin">
+                                    <a href="https://www.linkedin.com" target="_blank">
+                                        <i class="fab fa-linkedin fa-3x fa-fw"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item mr-3" id="twitter">
+                                    <a href="https://www.twitter.com" target="_blank">
+                                        <i class="fab fa-twitter-square fa-3x fa-fw"></i>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item" id="github">
+                                    <a href="https://www.github.com" target="_blank">
+                                        <i class="fab fa-github fa-3x fa-fw"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                            <br>
+                            <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web
+                                Development Project by Farha, Ewa & Max 2023 !!</p>
+                            <br>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.container -->
+            </footer>
+            <!-- end of Footer -->
+    </body>
 </html>
