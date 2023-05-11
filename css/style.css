@@ -1,6 +1,6 @@
 body {
     width: 100%;
-    background-image: url(../images/img-2.jpeg);
+    background-color: #55423d;
 }
 /* utility */
 * {
@@ -21,6 +21,7 @@ body {
     position: relative;
     margin: 0 0 0 500px;
     font-size: 40px;
+    background-color: #271c19;
 }
 li {
     list-style-type: none;
@@ -29,31 +30,31 @@ li {
     display: flex;
 }
 .list li {
-    color: #FF4433;
-    margin: 0 30px;
+    color: #fffffe;
+    margin: 15px 15px;
     font-size: 25px;
 }
 .button {
     display: inline-block;
-    background-color: #FF505F;
+    background-color:#fffffe;
     border: none;
     color: #fff;
     padding: 8px 30px;
     font-size: 18px;
 }
 /* end of navbar-section */
-/* Jumbotron with animation */
+/* Jumbotron */
 .jumbotron {
-    background-image: url(../images/heading-image.png);
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-color: transparent;
+    color: #fff3ec;
     width: 100%;
     height: 20%;
-    margin-top: 20px;
     background-position: 25%, 0, 0, 0;
+    padding-top: 15%;
+    padding-bottom: 10%;
 }
 .display-1 {
-    color: #FF505F;
+    color: #fffffe;
     z-index: 1;
     text-align: center;
     margin: 0 auto;
@@ -61,8 +62,6 @@ li {
     top: 20px;
     margin-left: 13%;
     position: relative;
-    font-family: cursive;
-    animation-delay: 1s;
 }
 /* end of Jumbotron with animation */
 #container-rows {
@@ -71,11 +70,11 @@ li {
 .selections {
     font-family: 'DM Sans', sans-serif;
     text-align: center;
-    color: rgb(193, 20, 20);
+    color: #fffffe;
     font-size: 50px;
 }
 .form-check-label {
-    color: rgb(145, 60, 24);
+    color: #fffffe;
     font-family: 'DM Sans', sans-serif;
     font-size: 24px;
 }
@@ -122,18 +121,7 @@ li {
     ;
     color: white;
 }
-#save_drink {
-    border-radius: .25rem;
-    background-color: #6B992F;
-    border-color: #6B992F;
-    color: white;
-}
-.drinkCard {
-    max-width: 100%;
-    margin-top: 20px;
-    position: relative;
-    left: 2px;
-}
+
 .display-1 {}
 /* Project-Team Section*/
 
@@ -149,14 +137,14 @@ li {
     width: 1000px;
 }
 .team {
-    color: rgb(193, 20, 20);
+    color: #fffffe;
     font-size: 40px;
     margin-bottom: 20px;
     margin-left: 56%;
 }
 /* footer-section */
 #footer {
-    background-color: #221C07 !important;
+    background-color: #271c19 !important;
 }
 #links {
     margin-top: 30px;
