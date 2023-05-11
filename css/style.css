@@ -1,0 +1,166 @@
+body {
+    width: 100%;
+    background-image: url(../images/img-2.jpeg);
+}
+/* utility */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ‘Red Rose’, cursive;
+}
+/* navbar-section */
+.logo {
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+}
+.navbar-brand {
+    font-family: ‘Stoke’, serif;
+    text-align: center;
+    position: relative;
+    margin: 0 0 0 500px;
+    font-size: 40px;
+}
+li {
+    list-style-type: none;
+}
+.list {
+    display: flex;
+}
+.list li {
+    color: #FF4433;
+    margin: 0 30px;
+    font-size: 25px;
+}
+.button {
+    display: inline-block;
+    background-color: #FF505F;
+    border: none;
+    color: #fff;
+    padding: 8px 30px;
+    font-size: 18px;
+}
+/* end of navbar-section */
+/* Jumbotron with animation */
+.jumbotron {
+    background-image: url(../images/heading-image.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width: 100%;
+    height: 20%;
+    margin-top: 20px;
+    background-position: 25%, 0, 0, 0;
+}
+.display-1 {
+    color: #FF505F;
+    z-index: 1;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 80px;
+    top: 20px;
+    margin-left: 13%;
+    position: relative;
+    font-family: cursive;
+    animation-delay: 1s;
+}
+/* end of Jumbotron with animation */
+#container-rows {
+    width: 103%;
+}
+.selections {
+    font-family: ‘Indie Flower’, cursive;
+    text-align: center;
+    color: rgb(193, 20, 20);
+    font-size: 50px;
+}
+.form-check-label {
+    color: rgb(145, 60, 24);
+    font-family: ‘Indie Flower’, cursive;
+    font-size: 24px;
+}
+#foodborder {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    float: left;
+    background-image: url(“../images/chalk.png”);
+}
+#drinkborder {
+    border: 2px solid black;
+    border-radius: 15px;
+    padding: 20px;
+    width: 100%;
+    float: right;
+    background-image: url(“../images/chalk.png”);
+}
+.remove {
+    display: none;
+}
+#card {
+    max-width: 100%;
+    margin-top: 20px;
+    position: relative;
+    right: 2px;
+}
+.card-img-top {
+    max-width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+}
+.drinkCard-img-top {
+    max-width: 100%;
+    position: relative;
+}
+#save_value {
+    border-radius: .25rem;
+    background-color: #6B992F;
+    ;
+    border-color: #6B992F;
+    ;
+    color: white;
+}
+#save_drink {
+    border-radius: .25rem;
+    background-color: #6B992F;
+    border-color: #6B992F;
+    color: white;
+}
+.drinkCard {
+    max-width: 100%;
+    margin-top: 20px;
+    position: relative;
+    left: 2px;
+}
+.display-1 {}
+/* Project-Team Section*/
+#project-team {
+    width: 100%;
+    background-image: url(../images/team-image.jpeg);
+    align-items: center;
+}
+.main-container {
+    text-align: center;
+}
+.row {
+    width: 1000px;
+}
+.team {
+    color: rgb(193, 20, 20);
+    font-size: 40px;
+    margin-bottom: 20px;
+    margin-left: 56%;
+}
+/* footer-section */
+#footer {
+    background-color: #221C07 !important;
+}
+#links {
+    margin-top: 30px;
+}
+#bottom-section {
+    color: #FFFFFF !important;
+}
+/* footer-section */
