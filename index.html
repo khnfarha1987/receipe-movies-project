@@ -4,17 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
     <!--Bootstrap CDN-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <!--Fonts, icons, animations, and styling links-->
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap" rel="stylesheet">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="stylesheet" href="css/style.css">
+    
     <!--Application title-->
-    <title>Food-Takeaway Project</title>
+    <title>Movie & Food Generator!</title>
 </head>
 <body>
     <body>
@@ -32,6 +35,7 @@
                     </div>
                 </nav>
             </section>
+            
             <!--Jumbotron-->
             <div class="jumbotron jumbotron-fluid">
                 <h1>Generate your perfect date!</h1>
@@ -43,55 +47,53 @@
             <div class="container">
                 <div class="row" id="container-rows">
 
-                    <!--Food radio buttons-->
+                    <!--Movie -->
                     <div class="col-lg-5 " id="Movies">
-                        <h3 class="selections">Generate a Movie!</h3>
+                        <h3 class="generate">Generate a Movie!</h3>
                     </div>
                     <!--Empty div-->
                     <div class="col-lg-2"></div>
 
-                    <!--Drink radio buttons-->
+                    <!--Recipe-->
                     <div class="col-lg-5 " id="Food">
-                        <h3 class="selections">Generate a Recipe!</h3>
+                        <h3 class="generate">Generate a Recipe!</h3>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col-lg-5" id="card">
-                        <!--Recipe card displaying food name, ingredients, image, and link to recipe-->
-                        <div class="card remove">
-                            <img src="..." class="card-img-top" alt="Prepared Food">
-                            <div class="card-body">
-                                <h5 class="card-title">Card title</h5>
-                                <p class="card-text"></p>
-                                <a href="#" class="btn btn-primary" id="recipieLink" target="_blank">Click here for
-                                    recipe</a>
-                            </div>
-                        </div>
-                    </div>
 
+            <!--Previous Searches-->
+            <div class="container" id="prev-searches">
+                <h4>Your Previous Searches</h4>
+            </div>
 
+            <!--About Section-->
+            <div class="container" id="about">
+                <h4>About</h4>
+            </div>
 
             <!--Team Members Section-->
             <section>
                 <div class="container bg-secondary" id="project-team">
-                    <div class="col-lg-7 order-lg-1 text-white">
+                    <div class="col-lg-7 order-lg-1">
                         <div class="p-5">
                             <h2 class="team">Project Team!</h2>
                             <div class="main-container">
                                 <!-- Team Members Name-->
                                 <div class="row">
+
                                     <!--Farha-->
                                     <div class="col-lg-4">
                                         <img class="img-fluid rounded-circle" src="images/farha.jpg" alt="">
                                         <h2 class="heading">Farha</h2>
                                         <a class="btn btn-primary" href="#">view details >></a>
                                     </div>
+
                                     <!--Max-->
                                     <div class="col-lg-4">
                                         <img class="img-fluid rounded-circle" src="images/max.jpeg" alt="">
                                         <h2 class="heading">Max</h2>
                                         <a class="btn btn-primary" href="#">view details >></a>
                                     </div>
+
                                     <!--Ewa-->
                                     <div class="col-lg-4">
                                         <img class="img-fluid rounded-circle" src="images/ewa.jpeg" alt="">
@@ -112,8 +114,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 h-100 text-center mx-auto" id="links">
-                            <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web
-                                Development Project by Farha, Ewa & Max 2023!</p>
+                            <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web Development Project by Farha, Ewa & Max 2023!</p>
                             <br>
                         </div>
                     </div>

@@ -9,6 +9,11 @@ body {
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
 }
+
+h1 {
+    font-weight: 700;
+}
+
 /* navbar-section */
 .logo {
     border-radius: 50%;
@@ -63,67 +68,33 @@ li {
     margin-left: 13%;
     position: relative;
 }
-/* end of Jumbotron with animation */
+/* end of Jumbotron*/
+
+/* Generate Area!!! */
+
 #container-rows {
-    width: 103%;
-}
-.selections {
-    font-family: 'DM Sans', sans-serif;
+    width: 100%;
+    color: #fff3ec;
     text-align: center;
-    color: #fffffe;
-    font-size: 50px;
-}
-.form-check-label {
-    color: #fffffe;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 24px;
-}
-#foodborder {
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    width: 100%;
-    float: left;
-    background-image: url(“../images/chalk.png”);
-}
-#drinkborder {
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 20px;
-    width: 100%;
-    float: right;
-    background-image: url(“../images/chalk.png”);
-}
-.remove {
-    display: none;
-}
-#card {
-    max-width: 100%;
-    margin-top: 20px;
-    position: relative;
-    right: 2px;
-}
-.card-img-top {
-    max-width: 90%;
-    margin: auto;
-    margin-top: 20px;
-    position: relative;
-}
-.drinkCard-img-top {
-    max-width: 100%;
-    position: relative;
-}
-#save_value {
-    border-radius: .25rem;
-    background-color: #6B992F;
-    ;
-    border-color: #6B992F;
-    ;
-    color: white;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-weight: 500;
 }
 
-.display-1 {}
-/* Project-Team Section*/
+#prev-searches {
+    width: 100%;
+    color: #fff3ec;
+    text-align: left;
+    padding: 2%;
+}
+
+#about {
+    width: 100%;
+    color: #fff3ec;
+    text-align: left;
+    padding: 2%;
+
+}
 
 #project-team {
     width: 100%;
@@ -150,6 +121,6 @@ li {
     margin-top: 30px;
 }
 #bottom-section {
-    color: #FFFFFF !important;
+    color: #fff3ec !important;
 }
 /* footer-section */
