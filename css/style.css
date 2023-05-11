@@ -7,7 +7,7 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Red Rose', cursive;
+    font-family: 'DM Sans', sans-serif;
 }
 /* navbar-section */
 .logo {
@@ -16,7 +16,7 @@ body {
     width: 80px;
 }
 .navbar-brand {
-    font-family: 'Stoke', serif;
+    font-family: 'DM Sans', sans-serif;
     text-align: center;
     position: relative;
     margin: 0 0 0 500px;
@@ -69,14 +69,14 @@ li {
     width: 103%;
 }
 .selections {
-    font-family: 'Indie Flower', cursive;
+    font-family: 'DM Sans', sans-serif;
     text-align: center;
     color: rgb(193, 20, 20);
     font-size: 50px;
 }
 .form-check-label {
     color: rgb(145, 60, 24);
-    font-family: 'Indie Flower', cursive;
+    font-family: 'DM Sans', sans-serif;
     font-size: 24px;
 }
 #foodborder {
@@ -136,6 +136,7 @@ li {
 }
 .display-1 {}
 /* Project-Team Section*/
+
 #project-team {
     width: 100%;
     background-image: url(../images/team-image.jpeg);
