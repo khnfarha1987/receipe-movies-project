@@ -15,7 +15,7 @@ function renderMovie(response){
     var releaseDate =  $("<p>").text("Release Date: "+checkIfAvailable(response.Year));
      var poster =  $("<img>").attr("src",checkIfImageAvailable(response.Poster))
 
-    movieCard.append(title, releaseDate, poster);
+    movieCard.append(poster, title, releaseDate);
     moviesDiv.append(movieCard);
 
 }
@@ -54,9 +54,9 @@ $("#search-btn").on("click", function (event) {
 
     //get value from input
     var search = $("#search-input").val().trim();
+    $("#movies-heading").text("Movies featuring: "+ search)
+ 
 
-    var heading = $("<h2>").text("Movies featuring: "+ search)
-    $("#movie-container").prepend(heading)
     console.log(search);
     //form query url
     var queryURL = "https://www.omdbapi.com/?s=" + search + "&apikey=trilogy";

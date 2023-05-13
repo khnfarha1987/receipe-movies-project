@@ -30,17 +30,19 @@
    border-radius: 10px;
 }
 
-.movie-card h3, p{
-    font-family: 'DM Sans', sans-serif;
-    padding-left:10px;
-}
-#movie-container h2{
+#movies-heading{
     font-family: 'DM Sans', sans-serif;
     text-align: center;
     font-size: 2rem;
     padding: 1rem;
     font-weight: bold;
 }
+
+.movie-card h3, p{
+    font-family: 'DM Sans', sans-serif;
+    padding-left:10px;
+}
+
 .movie-card h3{
     font-size: 20px;
     padding-top:10px;
