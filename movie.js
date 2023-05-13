@@ -50,6 +50,7 @@ $("#search-button").on("click", function (event) {
     //prevent default
     event.preventDefault();
 
+    //empty before rendering
     moviesDiv.empty();
 
     //get value from input
