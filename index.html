@@ -16,6 +16,7 @@
 
     <!--Project CSS-->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-recipe.css">
     <link rel="stylesheet" href="css/style-movies.css">
     <!--Application title-->
     <title>Food-Takeaway Project</title>
@@ -24,33 +25,25 @@
 <body>
     <div class="">
         <section aria-label="navbar">
-            <nav class="navbar">
-                <div>
-                    <img class="logo" src="images/img-1.png" alt="logo" class="logo" />
-                </div>
-                <div>
-                    <ul class="list">
-                        <li class="list-item">Movies</li>
-                        <li class="list-item">Receipe</li>
-                    </ul>
-                </div>
-            </nav>
-        </section>
+            <!--Navbar-->
+            <section aria-label="navbar">
+                <nav class="navbar">
+                    <div>
+                        <img class="logo" src="images/img-1.png" alt="logo" class="logo"/>
+                    </div>
+                    <div>
+                        <ul class="list">
+                            <li class="list-item">About</li>
+                            <li class="list-item">Contact</li>
+                        </ul>
+                    </div>
+                </nav>
+            </section>
         <!--Jumbotron with animation-->
         <div class="jumbotron jumbotron-fluid">
-            <h1 class="display-1 animated tada">Combination Of Movies and Food</h1>
+            <h1>Generate your perfect date!</h1>
+            <h2>Placeholder explanation text</h2>
         </div>
-
-        <!--Bootstrap container and rows-->
-        <section class="column-name">
-            <div class="column" style="background-color:#aaa;">
-                <h2>Column 1</h2>
-                <p>Some text..</p>
-            </div>
-            <div class="column-name" style="background-color:#bbb;">
-                <h2>Column 2</h2>
-                <p>Some text..</p>
-        </section>
 
         <!--Search Bar-->
         <div>
@@ -106,65 +99,60 @@
         <!--End Of Farha Div Recipe Search-->
 
 
+        <div class="container" id="prev-searches">
+            <h4>Your Previous Searches</h4>
+        </div>
+
+        <!--About Section-->
+        <div class="container" id="about">
+            <h4>About</h4>
+        </div>
+
         <!--Team Members Section-->
         <section>
-            <div class="members bg-secondary" id="project-team">
-                <div class="col-lg-7 order-lg-1 text-white">
+            <div class="container bg-secondary" id="project-team">
+                <div class="col-lg-7 order-lg-1">
                     <div class="p-5">
                         <h2 class="team">Project Team!</h2>
-                        <div class="main-team">
-
+                        <div class="main-container">
                             <!-- Team Members Name-->
                             <div class="row">
+
                                 <!--Farha-->
                                 <div class="col-lg-4">
+                                    <img class="img-fluid rounded-circle" src="images/farha.jpg" alt="">
                                     <h2 class="heading">Farha</h2>
+                                    <a class="btn btn-primary" href="#">view details >></a>
                                 </div>
+
                                 <!--Max-->
                                 <div class="col-lg-4">
+                                    <img class="img-fluid rounded-circle" src="images/max.jpeg" alt="">
                                     <h2 class="heading">Max</h2>
+                                    <a class="btn btn-primary" href="#">view details >></a>
                                 </div>
+
                                 <!--Ewa-->
                                 <div class="col-lg-4">
+                                    <img class="img-fluid rounded-circle" src="images/ewa.jpeg" alt="">
                                     <h2 class="heading">Ewa</h2>
+                                    <a class="btn btn-primary" href="#">view details >></a>
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
-
             </div>
-
         </section>
-
+        <!-- /.container -->
         <br>
         <br>
         <!-- Footer -->
         <footer class="footer bg-light" id="footer">
-            <div class="bottom">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 h-100 text-center mx-auto" id="links">
-                        <ul class="list-inline mb-0">
-                            <li class="list-inline-item mr-3" id="linkedin">
-                                <a href="https://www.linkedin.com" target="_blank">
-                                    <i class="fab fa-linkedin fa-3x fa-fw"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item mr-3" id="twitter">
-                                <a href="https://www.twitter.com" target="_blank">
-                                    <i class="fab fa-twitter-square fa-3x fa-fw"></i>
-                                </a>
-                            </li>
-                            <li class="list-inline-item" id="github">
-                                <a href="https://www.github.com" target="_blank">
-                                    <i class="fab fa-github fa-3x fa-fw"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <br>
-                        <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web
-                            Development Project by Farha, Ewa & Max 2023 !!</p>
+                        <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web Development Project by Farha, Ewa & Max 2023!</p>
                         <br>
                     </div>
                 </div>
