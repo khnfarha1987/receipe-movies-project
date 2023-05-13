@@ -13,8 +13,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <link rel="stylesheet" href="css/style.css">
 
+    <!--Project CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-movies.css">
     <!--Application title-->
     <title>Food-Takeaway Project</title>
 </head>
@@ -50,20 +52,14 @@
                 <p>Some text..</p>
         </section>
 
-
-        <!--Ewa Div Movies Search-->
-
-        <!--End Of Ewa Div Movies Search-->
-
-
-        <!--Farha Div Receipe Search-->
-        <div class="container">
+        <!--Search Bar-->
+        <div>
             <div class="meal-wrapper">
 
-                <!-- meal-search -->
-                <div class="meal-search">
-                    <h2 class="first-title">Find Meals For Ingredients</h2>
-                    <!-- meal-search-box -->
+                <!-- Search -->
+                <div class="search">
+                    <h2 class="first-title">Find Meals & Movies For Ingredients</h2>
+                    <!-- Search-box -->
                     <div class="meal-search-box">
                         <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
                         <button type="submit" class="search-btn btn" id="search-btn">
@@ -71,101 +67,120 @@
                         </button>
                     </div>
                 </div>
-
-                <!-- meal-result -->
-                <div class="meal-result">
-                    <h2 class="second-title">Search Results:</h2>
-                    <div id="meal"></div>
-                </div>
-
-                <!-- meal-details -->
-                <div class="meal-details">
-                    <!-- recipe close btn -->
-                    <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
-                        <i class="fas fa-times"></i>
-                    </button>
-
-                    <!-- meal content -->
-                    <div class="meal-details-content"></div>
-                </div>
             </div>
         </div>
 
-    </div>
-    </div>
-    <!--End Of Farha Div Recipe Search-->
+        <!--Ewa Div Movies Search-->
+
+        <div class="container" id="movie-container">
+            <div id="movies-list">
+                <!-- Render Movies here-->
+            </div>
+
+        </div>
+
+        <!--End Of Ewa Div Movies Search-->
 
 
-    <!--Team Members Section-->
-    <section>
-        <div class="members bg-secondary" id="project-team">
-            <div class="col-lg-7 order-lg-1 text-white">
-                <div class="p-5">
-                    <h2 class="team">Project Team!</h2>
-                    <div class="main-team">
+        <!--Farha Div Receipe Search-->
+        <div class="container">
 
-                        <!-- Team Members Name-->
-                        <div class="row">
-                            <!--Farha-->
-                            <div class="col-lg-4">
-                                <h2 class="heading">Farha</h2>
+            <!-- meal-result -->
+            <div class="meal-result">
+                <h2 class="second-title">Search Results:</h2>
+                <div id="meal"></div>
+            </div>
+
+            <!-- meal-details -->
+            <div class="meal-details">
+                <!-- recipe close btn -->
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- meal content -->
+                <div class="meal-details-content"></div>
+            </div>
+        </div>
+
+        <!--End Of Farha Div Recipe Search-->
+
+
+        <!--Team Members Section-->
+        <section>
+            <div class="members bg-secondary" id="project-team">
+                <div class="col-lg-7 order-lg-1 text-white">
+                    <div class="p-5">
+                        <h2 class="team">Project Team!</h2>
+                        <div class="main-team">
+
+                            <!-- Team Members Name-->
+                            <div class="row">
+                                <!--Farha-->
+                                <div class="col-lg-4">
+                                    <h2 class="heading">Farha</h2>
+                                </div>
+                                <!--Max-->
+                                <div class="col-lg-4">
+                                    <h2 class="heading">Max</h2>
+                                </div>
+                                <!--Ewa-->
+                                <div class="col-lg-4">
+                                    <h2 class="heading">Ewa</h2>
+                                </div>
                             </div>
-                            <!--Max-->
-                            <div class="col-lg-4">
-                                <h2 class="heading">Max</h2>
-                            </div>
-                            <!--Ewa-->
-                            <div class="col-lg-4">
-                                <h2 class="heading">Ewa</h2>
-                            </div>
+
                         </div>
+                    </div>
+                </div>
 
+            </div>
+
+        </section>
+
+        <br>
+        <br>
+        <!-- Footer -->
+        <footer class="footer bg-light" id="footer">
+            <div class="bottom">
+                <div class="row">
+                    <div class="col-lg-6 h-100 text-center mx-auto" id="links">
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item mr-3" id="linkedin">
+                                <a href="https://www.linkedin.com" target="_blank">
+                                    <i class="fab fa-linkedin fa-3x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item mr-3" id="twitter">
+                                <a href="https://www.twitter.com" target="_blank">
+                                    <i class="fab fa-twitter-square fa-3x fa-fw"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item" id="github">
+                                <a href="https://www.github.com" target="_blank">
+                                    <i class="fab fa-github fa-3x fa-fw"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <br>
+                        <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web
+                            Development Project by Farha, Ewa & Max 2023 !!</p>
+                        <br>
                     </div>
                 </div>
             </div>
+            <!-- /.container -->
+        </footer>
+        <!-- end of Footer -->
 
-        </div>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--Linking jquery and script file-->
+        <script src="js/recipe.js"></script>
+        <script src="js/movie.js"></script>
 
-    </section>
+        
 
-    <br>
-    <br>
-    <!-- Footer -->
-    <footer class="footer bg-light" id="footer">
-        <div class="bottom">
-            <div class="row">
-                <div class="col-lg-6 h-100 text-center mx-auto" id="links">
-                    <ul class="list-inline mb-0">
-                        <li class="list-inline-item mr-3" id="linkedin">
-                            <a href="https://www.linkedin.com" target="_blank">
-                                <i class="fab fa-linkedin fa-3x fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item mr-3" id="twitter">
-                            <a href="https://www.twitter.com" target="_blank">
-                                <i class="fab fa-twitter-square fa-3x fa-fw"></i>
-                            </a>
-                        </li>
-                        <li class="list-inline-item" id="github">
-                            <a href="https://www.github.com" target="_blank">
-                                <i class="fab fa-github fa-3x fa-fw"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <br>
-                    <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web
-                        Development Project by Farha, Ewa & Max 2023 !!</p>
-                    <br>
-                </div>
-            </div>
-        </div>
-        <!-- /.container -->
-    </footer>
-    <!-- end of Footer -->
-
-
-    <!--Linking jquery and script file-->
-    <script src="js/recipe.js"></script>
 </body>
 
 </html>
