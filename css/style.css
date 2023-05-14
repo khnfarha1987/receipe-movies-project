@@ -124,3 +124,13 @@ li {
     color: #fff3ec !important;
 }
 /* footer-section */
+
+/* Search History */
+
+.hidden{
+    visibility: hidden;
+}
+
+.visible{
+    visibility: visible;
+}
