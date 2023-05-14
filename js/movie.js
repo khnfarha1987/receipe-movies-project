@@ -5,38 +5,37 @@ var movieData;
 
 
 //Function that renders movie data
+function renderMovie(response) {
 
-function renderMovie(response){
-    console.log("rendering movie");
+    //create movie card
+    var movieCard = $("<div>").attr("class", "movie-card");
 
-    var movieCard = $("<div>").attr("class","movie-card");
-
+    //assign all values needed for movie cards
     var title = $("<h3>").text(response.Title);
-    var releaseDate =  $("<p>").text("Release Date: "+checkIfAvailable(response.Year));
-     var poster =  $("<img>").attr("src",checkIfImageAvailable(response.Poster))
+    var releaseDate = $("<p>").text("Release Date: " + checkIfAvailable(response.Year));
+    var poster = $("<img>").attr("src", checkIfImageAvailable(response.Poster))
 
+    //append all values to card, and card to the movieDiv
     movieCard.append(poster, title, releaseDate);
     moviesDiv.append(movieCard);
 
 }
 
-//Function that generates random number for the movie id
-
 //check if data is available
-function checkIfAvailable(data){
-    if(data !="N/A"){
-        
-    }else{
+function checkIfAvailable(data) {
+    if (data != "N/A") {
+
+    } else {
         data = "watch and discover yourself!"
     }
 
     return data;
 }
+//check if image url is available, if not pass url to a movie related gif
+function checkIfImageAvailable(data) {
+    if (data != "N/A") {
 
-function checkIfImageAvailable(data){
-    if(data !="N/A"){
-        
-    }else{
+    } else {
         data = "https://media.tenor.com/mWpYDtV1zTkAAAAM/minions-shh.gif"
     }
 
@@ -54,28 +53,31 @@ $("#search-btn").on("click", function (event) {
 
     //get value from input
     var search = $("#search-input").val().trim();
-    $("#movies-heading").text("Movies featuring: "+ search)
- 
+    
+    //Update heading
+    $("#movies-heading").text("Movies featuring: " + search)
 
-    console.log(search);
     //form query url
     var queryURL = "https://www.omdbapi.com/?s=" + search + "&apikey=trilogy";
+    
     //get data from query
     $.ajax({
         url: queryURL,
         method: "GET"
     })
         .then(function (response) {
-            if(response.Response == "True"){
-                console.log(response);
-            for(i=0; i<response.Search.length; i++){
-                console.log(response.Search[i]);
-                renderMovie(response.Search[i]);
-            }
-            }else{
+            // If movie was found
+            if (response.Response == "True") {
+                for (i = 0; i < response.Search.length; i++) {
+                    //Render each movie
+                    renderMovie(response.Search[i]);
+                }
+            } 
+            //If nothing was wound, display "no results" message
+            else {
                 $("#movies-list").text("Sorry, no results available. Please try again.")
             }
-            
+
         })
-        
+
 });
