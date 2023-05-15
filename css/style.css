@@ -112,6 +112,10 @@ li {
 }
 
 /* end of Jumbotron*/
+.search {
+    margin-top: 20px;
+}
+
 #search-bar {
     background-image: url("..//images/img-3.png");
 }
@@ -130,7 +134,6 @@ li {
 #prev-searches {
     background-image: url(..//images/img-5.jpeg);
     width: 100%;
-    margin-top: -6%;
     color: #fff3ec;
     text-align: left;
     padding: 2%;
@@ -240,6 +243,14 @@ li {
 /* footer-section */
 
 /* Search History */
+.savedBtn {
+    color: #fff;
+    background-color: #f00a0ae0;
+    border-color: #fff;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 1rem;
+}
 
 .hidden {
     visibility: hidden;
