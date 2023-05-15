@@ -2,6 +2,7 @@ var searchBtn = document.getElementById('search-btn');
 var mealList = document.getElementById('meal');
 var mealDetailsContent = document.querySelector('.meal-details-content');
 var recipeCloseBtn = document.getElementById('recipe-close-btn');
+document.cookie = 'SameSite=None';
 
 // event listeners
 searchBtn.addEventListener('click', getMealList);
@@ -13,6 +14,9 @@ recipeCloseBtn.addEventListener('click', () => {
 // get meal list that matches with the ingredients
 function getMealList() {
     var searchInputTxt = document.getElementById('search-input').value.trim();
+    //Update heading
+    $("#recipe-heading").text("Recipe featuring: " + searchInputTxt)
+
     fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=447e563198c34679afe3427fe0ed747b&includeIngredients=${searchInputTxt}`)
         .then(response => response.json())
         .then(data => {
@@ -60,8 +64,8 @@ function mealRecipeModal(data) {
         <h2 class = "recipe-title">${data.title}</h2>
         <p class = "recipe-category">${data.cuisines}</p>
         <div class = "recipe-instruct">
-            <h3>Instructions:</h3>
-            <p>${data.instructions}</p>
+            <h3 class = "recipe-heading">Instructions:</h3>
+            <p class = "recipe-details">${data.instructions}</p>
         </div>
         <div class = "recipe-meal-img">
             <img src = "${data.image}" alt = "">
