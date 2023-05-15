@@ -1,4 +1,5 @@
 var moviesDiv = $("#movies-list")
+document.cookie = 'SameSite=None; Secure';
 
 //have global access to data from query
 var movieData;
@@ -53,13 +54,13 @@ $("#search-btn").on("click", function (event) {
 
     //get value from input
     var search = $("#search-input").val().trim();
-    
+
     //Update heading
     $("#movies-heading").text("Movies featuring: " + search)
 
     //form query url
     var queryURL = "https://www.omdbapi.com/?s=" + search + "&apikey=trilogy";
-    
+
     //get data from query
     $.ajax({
         url: queryURL,
@@ -72,7 +73,7 @@ $("#search-btn").on("click", function (event) {
                     //Render each movie
                     renderMovie(response.Search[i]);
                 }
-            } 
+            }
             //If nothing was wound, display "no results" message
             else {
                 $("#movies-list").text("Sorry, no results available. Please try again.")

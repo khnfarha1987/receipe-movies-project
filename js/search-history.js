@@ -1,5 +1,5 @@
 var search = $("#search-input").val().trim();
-
+document.cookie = 'SameSite=None; Secure';
 //array to save search history
 var searches = [];
 
@@ -16,7 +16,7 @@ function saveSearch(value) {
 
     //create a button
     var button = $("<button>")
-    button.text(value).attr("class", "btn")
+    button.text(value).attr("class", "btn savedBtn")
 
     // add to the history area in html
     $("#history-list").prepend(button);
@@ -118,7 +118,7 @@ $(document).on("click", ".savedBtn", function (event) {
                     //render each movie
                     renderMovie(response.Search[i]);
                 }
-            } 
+            }
             // if no results found
             else {
                 $("#movies-list").text("Sorry, no results available. Please try again.")
@@ -126,5 +126,6 @@ $(document).on("click", ".savedBtn", function (event) {
 
         })
 
-
+    // get data for recipes
+    getMealList(search);
 })
