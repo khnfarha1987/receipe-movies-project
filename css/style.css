@@ -122,6 +122,10 @@ li {
 }
 
 /* end of Jumbotron*/
+.search {
+    margin-top: 20px;
+}
+
 #search-bar {
    background-color: transparent;
 }
@@ -139,7 +143,7 @@ li {
 /* Previous-searches */
 #prev-searches {
     width: 100%;
-    color: var(--ghost-white);
+    color: var(--ghost-white)
     text-align: left;
     padding: 1rem;
     align-items: center;
@@ -290,6 +294,14 @@ li {
 /* footer-section */
 
 /* Search History */
+.savedBtn {
+    color: #fff;
+    background-color: #f00a0ae0;
+    border-color: #fff;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-size: 1rem;
+}
 
 .hidden {
     visibility: hidden;

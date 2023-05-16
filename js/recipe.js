@@ -2,22 +2,27 @@ var searchBtn = document.getElementById('search-btn');
 var mealList = document.getElementById('meal');
 var mealDetailsContent = document.querySelector('.meal-details-content');
 var recipeCloseBtn = document.getElementById('recipe-close-btn');
-document.cookie = 'SameSite=None';
+document.cookie = 'SameSite=None; Secure';
 
 // event listeners
-searchBtn.addEventListener('click', getMealList);
+searchBtn.addEventListener('click', getMealListInfo);
 mealList.addEventListener('click', getMealRecipe);
 recipeCloseBtn.addEventListener('click', () => {
     mealDetailsContent.parentElement.classList.remove('showRecipe');
 });
 
+function getMealListInfo() {
+    var searchInputTxt;
+    searchInputTxt = document.getElementById('search-input').value.trim();
+    getMealList(searchInputTxt);
+}
 // get meal list that matches with the ingredients
-function getMealList() {
-    var searchInputTxt = document.getElementById('search-input').value.trim();
+function getMealList(searchInputTxt) {
+
     //Update heading
     $("#recipe-heading").text("Recipe featuring: " + searchInputTxt)
 
-    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=447e563198c34679afe3427fe0ed747b&includeIngredients=${searchInputTxt}`)
+    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=8319cddf825d47608ac50d2b6b0e12db&includeIngredients=${searchInputTxt}`)
         .then(response => response.json())
         .then(data => {
             var html = "";
