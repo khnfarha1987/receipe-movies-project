@@ -1,4 +1,4 @@
-# Foodie Movies Bucket List
+# Watch Your Food - Foodie Movies Bucket List
 A website for generating ideas for movies and food based off of an ingredient.
 
 ## Project Description
@@ -6,9 +6,12 @@ A website for generating ideas for movies and food based off of an ingredient.
 
 For Module 9's Challenge, we were challenged to make a website from scratch utilising JavaScript, two server-side APIs, Bootstrap and client-side storage whilst together working in a group.
 
-Our idea was to create a website for a date or movie night that would help provide inspiration on what the user could watch and cook for the evening.
+Our idea was to create a website for a date or movie night that would provide inspiration on what the user could watch and cook for the evening.
 
 The website we made will create a list of films and recipes based off on an ingredient that the user inputs using the search feature. A grid of movies will then generate upon hitting search, along with a list of recipes underneath.
+
+## Usage
+Please visit the deployed website here: https://khnfarha1987.github.io/receipe-movies-project/
 
 ## Our Approach
 
