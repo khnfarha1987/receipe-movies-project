@@ -143,7 +143,7 @@ li {
 /* Previous-searches */
 #prev-searches {
     width: 100%;
-    color: var(--ghost-white)
+    color: var(--ghost-white);
     text-align: left;
     padding: 1rem;
     align-items: center;
@@ -292,6 +292,10 @@ li {
 }
 
 /* footer-section */
+footer p{
+   padding: 1rem;
+   text-align: center;
+}
 
 /* Search History */
 .savedBtn {
