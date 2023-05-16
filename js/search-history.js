@@ -127,4 +127,34 @@ $(document).on("click", ".savedBtn", function (event) {
         })
 
 
+    // Render recipies
+    fetch(`https://api.spoonacular.com/recipes/complexSearch?apiKey=447e563198c34679afe3427fe0ed747b&includeIngredients=${search}`)
+        .then(response => response.json())
+        .then(data => {
+            var html = "";
+            if (data.results) {
+                data.results.forEach(recipe => {
+                    html += `
+                    <div class = "meal-item" data-id = "${recipe.id}">
+                        <div class = "meal-img">
+                            <img src = "${recipe.image}" alt = "food">
+                        </div>
+                        <div class = "meal-name">
+                            <h3>${recipe.title}</h3>
+                            <a href = "#" class = "recipe-btn">Get Recipe</a>
+                        </div>
+                    </div>
+                `;
+                });
+                mealList.classList.remove('notFound');
+            } else {
+                html = "Sorry, we didn't find any meal!";
+                mealList.classList.add('notFound');
+            }
+
+            mealList.innerHTML = html;
+        });
+
+        
+
 })

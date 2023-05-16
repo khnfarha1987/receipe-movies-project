@@ -29,7 +29,7 @@
     border-radius: 10px;
 }
 
-#movies-heading {
+/* #movies-heading {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
@@ -38,12 +38,10 @@
     font-size: 2.5rem;
     padding: 1rem;
     font-weight: bold;
-}
+} */
 
-.movie-card h3,
-p {
+.movie-card h3, .movie-card p {
     color: black;
-    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 
 }

@@ -16,22 +16,6 @@ body {
     font-family: 'Times New Roman', Times, serif;
 }
 
-/* Create two equal columns that floats next to each other */
-.column {
-    float: left;
-    width: 50%;
-    padding: 10px;
-    height: 300px;
-    /* Should be removed. Only for demonstration */
-}
-
-/* Clear floats after the columns */
-.column-name:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
 /*  */
 .btn {
     font-family: inherit;
@@ -44,7 +28,7 @@ body {
     opacity: 0.8;
 }
 
-.first-title {
+/* .first-title {
     font-size: 3.5rem;
     margin-bottom: 1rem;
     color: #f00a0ae0;
@@ -58,7 +42,7 @@ body {
 }
 
 /* h2-section */
-#recipe-heading {
+/* #recipe-heading {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     text-align: center;
@@ -67,7 +51,7 @@ body {
     font-size: 2.5rem;
     padding: 1rem;
     font-weight: bold;
-}
+} */ 
 
 /*  */
 
@@ -263,14 +247,14 @@ body {
     opacity: 0.9;
 }
 
-.recipe-title {
+/* .recipe-title {
     color: black;
     text-align: justify;
     font-family: fantasy;
     font-size: 30px;
     letter-spacing: 1px;
     padding-bottom: 1rem;
-}
+} */
 
 .recipe-category {
     font-weight: 600;
@@ -297,11 +281,11 @@ body {
     -o-border-radius: 0.3rem;
 }
 
-.recipe-heading {
+/* .recipe-heading {
     color: #fff;
     font-size: 30px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
+} */
 
 .recipe-details {
     color: #fff;
