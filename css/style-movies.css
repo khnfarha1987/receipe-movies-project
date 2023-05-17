@@ -1,4 +1,6 @@
 #movie-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     justify-content: center;
     align-items: center;
 }
@@ -29,17 +31,6 @@
     border-radius: 10px;
 }
 
-/* #movies-heading {
-    font-family: 'Times New Roman', Times, serif;
-    color: white;
-    text-align: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 2.5rem;
-    padding: 1rem;
-    font-weight: bold;
-} */
-
 .movie-card h3, .movie-card p {
     color: black;
     text-align: center;
@@ -47,9 +38,10 @@
 }
 
 .movie-card h3 {
-    color: #f00a0ae0;
+    color: var(--madder);
     font-size: 20px;
     padding-top: 10px;
     font-weight: bold;
+    font-family: 'Koulen';
 
 }
