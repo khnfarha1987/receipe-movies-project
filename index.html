@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!--Bootstrap CDN-->
-
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
@@ -17,14 +16,16 @@
     <!--Application title-->
     <title>Food-Takeaway Project</title>
 
-    <!--Font Link-->
+    <!--Font Links-->
     <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
 
     <!--Project CSS-->
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/style-recipe.css">
     <link rel="stylesheet" href="css/style-movies.css">
-
 
 </head>
 
@@ -64,40 +65,30 @@
         <!-- end of navbar-section -->
 
 
-        <!--Jumbotron with animation-->
+        <!--Jumbotron -->
         <div class="jumbotron jumbotron-fluid container">
             <div id="jumbotron-text">
-                <h1 class="jumbotron-title" id="title">Foodie Movies Bucket List: Cooking & Food Films You Need to
-                    Watch
+                <h1 class="jumbotron-title" id="title">Watch Your Food: Recipies & Movies for your taste
                 </h1>
-                <p class="jumbotron-description">Not only are movies revolving around food an excellent watch –
-                    perhaps
-                    over some wine – for their
-                    beautiful food aesthetics and usually fun storylines, but they can be a great motivator for
-                    trying
-                    out new dishes in the kitchen. Or perhaps to start cooking in the first place! Below I’ve put
-                    together a list of foodie movies that are guaranteed to get you hungry on the spot and hopefully
-                    inspire you to attempt recreating those scrumptious dishes at home. How many of these films have
-                    you
-                    seen?</p>
+                <p class="jumbotron-description">Hungry for food and some fun? <br />
+                    Simply have a look at what you have in
+                    your fridge, and let us generate the best recommendations!</p>
             </div>
             <img class="jumbotron-image" src="images/img-2.jpeg" alt="food-movies description">
         </div>
 
         <!--Search Bar-->
-        <div>
-            <div class="meal-wrapper" id="search-bar">
+        <div class="meal-wrapper" id="search-bar">
 
-                <!-- Search -->
-                <div class="search">
-                    <h2 class="first-title">Find Meals & Movies For Ingredients</h2>
-                    <!-- Search-box -->
-                    <div class="meal-search-box">
-                        <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
-                        <button type="submit" class="search-btn btn" id="search-btn">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </div>
+            <!-- Search -->
+            <div class="search">
+                <h2 class="first-title">Find Meals & Movies For Ingredients</h2>
+                <!-- Search-box -->
+                <div class="search-box">
+                    <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                    <button type="submit" class="search-btn btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
                 </div>
             </div>
         </div>
@@ -144,22 +135,17 @@
 
         <!--About Section-->
         <div class="about-section col-lg-10" id="about">
-            <h2 class="about-title">The most iconic food moments in movie history, and the recipes to recreate
-                them !!
+            <h2 class="about-title">About this project
             </h2>
-            <p class="about-description">Ever felt your stomach rumbling at the sight on an on-screen meal? Whet
-                your appetite with iconic
-                food moments from cinema history – then recreate them with these delicious recipes.
+            <p class="about-description">An innovative web application that combines ingredient-based search
+                functionality with curated movie and recipe recommendations. Simply input an ingredient, and "Watch Your
+                Food" generates a customized list of movies and recipes centered around that ingredient. <br /><br />
 
-                Picture the scene: you’re tucked up on the sofa, watching a film. Bowl of popcorn in hand, you sit
-                transfixed as the plot picks up pace. Suddenly, a plate of food comes into view, so mouthwatering
-                that its aroma somehow magically wafts its way through the screen towards you. Like a cartoon
-                character with a one-track mind, all that matters in that moment is devouring the exact same thing.
 
-                If you’re nodding your head vigorously, then you’ve come to the right place. Food has a rich history
-                on the silver screen, and can be a powerful means of storytelling without anyone having to utter a
-                word. A beautiful meal can seal a friendship or rekindle a love interest; although, equally,
-                sometimes it’s just a great cinematic moment that deserves appreciation.</p>
+                We wanted to create something useful, and fun for users to play around with. We thought that majority of
+                people enjoy movies and food, so why not use that for our project. In the end we created an app that we
+                all would happily use when we don’t know what to cook, or watch or… both! 🍿🎬
+            </p>
         </div>
 
         <!--Team Members Section-->
@@ -208,7 +194,7 @@
                 <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web
                     Development Project by Farha, Ewa & Max **2023**</p>
             </div>
-            <!-- /.container -->
+
         </footer>
         <!-- End Of Footer Section-->
 

@@ -74,10 +74,12 @@ $("#history-btn").on("click", function (event) {
         console.log("I'm visible");
         visibility = "hidden"
         $("#history-list").attr("class", visibility);
+        $("#history-list").attr("style", "height:0px;");
     } else {
         $("#history-btn").text("Close history");
         visibility = "visible"
         $("#history-list").attr("class", visibility);
+        $("#history-list").attr("style", "height:auto;");
     }
 
     //empty history list div
