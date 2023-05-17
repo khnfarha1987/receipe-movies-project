@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!--Bootstrap CDN-->
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+        integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+        crossorigin="anonymous" />
+
+    <!--Application title-->
+    <title>Food-Takeaway Project</title>
+
+    <!--Font Link-->
+    <link href='https://fonts.googleapis.com/css?family=Koulen' rel='stylesheet'>
+
+    <!--Project CSS-->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style-recipe.css">
+    <link rel="stylesheet" href="css/style-movies.css">
+
+
+</head>
+
+<body>
+    <div class="">
+        <!--Navbar-->
+
+        <!-- navbar-section -->
+        <!-- Navigation -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div>
+                <img class="logo" src="images/logo.png" alt="logo" class="logo" />
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"> <i class="fas fa-bars"
+                        style="color:#fff; font-size:28px;"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#title">Welcome
+                            <span class="sr-only">(current)</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-details">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end of navbar-section -->
+
+
+        <!--Jumbotron with animation-->
+        <div class="jumbotron jumbotron-fluid container">
+            <div id="jumbotron-text">
+                <h1 class="jumbotron-title" id="title">Foodie Movies Bucket List: Cooking & Food Films You Need to
+                    Watch
+                </h1>
+                <p class="jumbotron-description">Not only are movies revolving around food an excellent watch –
+                    perhaps
+                    over some wine – for their
+                    beautiful food aesthetics and usually fun storylines, but they can be a great motivator for
+                    trying
+                    out new dishes in the kitchen. Or perhaps to start cooking in the first place! Below I’ve put
+                    together a list of foodie movies that are guaranteed to get you hungry on the spot and hopefully
+                    inspire you to attempt recreating those scrumptious dishes at home. How many of these films have
+                    you
+                    seen?</p>
+            </div>
+            <img class="jumbotron-image" src="images/img-2.jpeg" alt="food-movies description">
+        </div>
+
+        <!--Search Bar-->
+        <div>
+            <div class="meal-wrapper" id="search-bar">
+
+                <!-- Search -->
+                <div class="search">
+                    <h2 class="first-title">Find Meals & Movies For Ingredients</h2>
+                    <!-- Search-box -->
+                    <div class="meal-search-box">
+                        <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+                        <button type="submit" class="search-btn btn" id="search-btn">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--Ewa Div Movies Search-->
+        <div class="container" id="movie-container">
+            <h2 id="movies-heading"></h2>
+            <div id="movies-list">
+                <!-- Render Movies here-->
+            </div>
+        </div>
+        <!--End Of Ewa Div Movies Search-->
+
+        <!--Farha Div Receipe Search-->
+        <div class="container" id="recipe-container">
+            <h2 id="recipe-heading"></h2>
+            <!-- meal-result -->
+            <div class="meal-result">
+                <h2 class="second-title"></h2>
+                <div id="meal"></div>
+            </div>
+
+            <!-- meal-details -->
+            <div class="meal-details">
+                <!-- recipe close btn -->
+                <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+
+                <!-- meal content -->
+                <div class="meal-details-content"></div>
+            </div>
+        </div>
+
+        <!--End Of Farha Div Recipe Search-->
+        <!--End Of Farha Div Recipe Search-->
+
+        <!--Previous-searches Section-->
+        <div class="container" id="prev-searches">
+            <h2 class="prv-search">Your Previous Searches</h2>
+            <button id="history-btn">View History</button>
+            <div id="history-list" class="hidden"></div>
+        </div>
+
+        <!--About Section-->
+        <div class="about-section col-lg-10" id="about">
+            <h2 class="about-title">The most iconic food moments in movie history, and the recipes to recreate
+                them !!
+            </h2>
+            <p class="about-description">Ever felt your stomach rumbling at the sight on an on-screen meal? Whet
+                your appetite with iconic
+                food moments from cinema history – then recreate them with these delicious recipes.
+
+                Picture the scene: you’re tucked up on the sofa, watching a film. Bowl of popcorn in hand, you sit
+                transfixed as the plot picks up pace. Suddenly, a plate of food comes into view, so mouthwatering
+                that its aroma somehow magically wafts its way through the screen towards you. Like a cartoon
+                character with a one-track mind, all that matters in that moment is devouring the exact same thing.
+
+                If you’re nodding your head vigorously, then you’ve come to the right place. Food has a rich history
+                on the silver screen, and can be a powerful means of storytelling without anyone having to utter a
+                word. A beautiful meal can seal a friendship or rekindle a love interest; although, equally,
+                sometimes it’s just a great cinematic moment that deserves appreciation.</p>
+        </div>
+
+        <!--Team Members Section-->
+        <section class="container bg-secondary col-lg-10" id="project-team">
+
+            <h2 class="team">Project Team!</h2>
+            <!-- Team Members Name-->
+            <div class="row" id="team-memmbers">
+
+                <!--Farha-->
+                <div class="col-lg-4 member">
+                    <img class="img-fluid rounded-circle" src="images/farha.jpg" alt="">
+                    <h2 class="heading">Farha</h2>
+                    <a class="btn btn-primary" id="contact-details"
+                        href="https://www.linkedin.com/in/farha-khan-b74340208/" target="_blank">contact
+                        details
+                        >></a>
+                </div>
+
+                <!--Ewa-->
+                <div class="col-lg-4 member">
+                    <img class="img-fluid rounded-circle" src="images/ewa.jpg" alt="">
+                    <h2 class="heading">Ewa</h2>
+                    <a class="btn btn-primary" id="contact-details"
+                        href="https://www.linkedin.com/in/ewa-g%C3%B3rka-9003b2167/" target="_blank">contact
+                        details >></a>
+                </div>
+
+                <!--Max-->
+                <div class="col-lg-4 member">
+                    <img class="img-fluid rounded-circle" src="images/max.jpg" alt="">
+                    <h2 class="heading">Max</h2>
+                    <a class="btn btn-primary" id="contact-details"
+                        href="https://uk.linkedin.com/in/maxwell-sparrey-7a756b269" target="_blank">contact
+                        details >></a>
+                </div>
+
+        </section>
+        <!--End Of Team Members Section-->
+        <br>
+        <br>
+
+        <!-- Footer Section -->
+        <footer class="footer bg-light" id="footer">
+            <div class="container">
+                <p class="text-muted small mb-4 mb-lg-0" id="bottom-section">&copy; Front End Web
+                    Development Project by Farha, Ewa & Max **2023**</p>
+            </div>
+            <!-- /.container -->
+        </footer>
+        <!-- End Of Footer Section-->
+
+        <!-- Bootstrap script-->
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+            crossorigin="anonymous"></script>
+
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!--Linking jquery and script file-->
+        <script src="js/recipe.js"></script>
+        <script src="js/movie.js"></script>
+        <script src="js/search-history.js"></script>
+
+
+
+
+</body>
+
+</html>
