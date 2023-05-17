@@ -39,7 +39,7 @@ p{
 
 /* navbar-section */
 .navbar {
-    background-color: var(--night) !important;
+    background-color: var(--chocolate-cosmos) !important;
 }
 
 .nav-item a {
@@ -94,12 +94,21 @@ li {
     font-size: 1rem;
 }
 
-.btn-primary:hover, #history-btn:hover{
+.btn-primary:hover, #history-btn:hover, .btn-primary:active, 
+#history-btn:active .btn-primary:focus, #history-btn:focus{
     color: var(--ghost-white);
     background-color: var(--chocolate-cosmos) !important;
-    background-color: var(--chocolate-cosmos) !important;
+    border: solid 1px var(--madder) !important;
+    box-shadow: none !important;
 }
 
+
+.savedBtn:hover{
+    color: var(--ghost-white);
+    background-color: var(--chocolate-cosmos) !important;
+    border: solid 1px var(--madder) !important;
+    box-shadow: none;
+}
 /* end of navbar-section */
 
 /* Jumbotron */
